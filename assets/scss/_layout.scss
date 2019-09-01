@@ -90,7 +90,7 @@ body > header {
   position: absolute;
   width: 100%;
   z-index: $zindex-sticky;
-  top: $section-padding-top / 2;
+  top: $section-padding-top;
 
   @include media(">lg") {
     top: $section-padding-top;
@@ -113,33 +113,93 @@ body > header {
   }
 
   .menu {
-    text-align: right;
+    display: none;
+
+    @include media(">md") {
+      display: block;
+    }
 
     ul {
       list-style: none;
+      padding: 0;
+      margin-top: 24px;
+      background-color: $color-ui-white;
+      border-radius: $base-border-radius;
+      text-align: center;
+
+      @include media(">md") {
+        margin-top: 0;
+        text-align: right;
+        background-color: transparent;
+        border-radius: 0;
+      }
     }
 
     li {
-      display: inline;
       font-size: $body1-font-size;
       line-height: $body1-line-height;
       font-weight: $font-weight-medium;
+      border-bottom: $form-control-border;
+
+      @include media(">md") {
+        display: inline-block;
+        border-bottom: 0;
+      }
     }
 
     a {
-      color: $color-ui-white;
+      display: block;
       text-decoration: none;
       padding-right: $button-padding-horizontal;
       padding-left: $button-padding-horizontal;
       padding-bottom: $button-padding-vertical;
       padding-top: $button-padding-vertical;
       letter-spacing: $button-letter-spacing;
+
+      &:hover {
+        background-color: $color-ui-lighter;
+      }
+
+      @include media(">md") {
+        color: $color-ui-white;
+        
+        &:hover {
+          background-color: transparent;
+          text-decoration: underline;
+        }
+      }
     }
 
     .lang-switcher {
       > a {
         text-transform: uppercase;
       }
+    }
+  }
+
+  .hbg {
+    position: absolute;
+    right: $grid-gutter;
+    top: 0;
+    width: 40px;
+    height: 32px;
+    border-radius: $base-border-radius;
+    cursor: pointer;
+    background-image: url(/svg/icons/hbg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include media(">md") {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $color-brand-primary;
+    }
+
+    &.active {
+      background-color: $color-brand-primary;
+      background-image: url(/svg/icons/hbg-close.svg);
     }
   }
 }
@@ -293,7 +353,7 @@ section.hero {
   z-index: 10;
   display: flex;
   align-items: flex-end;
-  padding-top: $section-padding-top;
+  padding-top: $section-padding-top * 3;
   padding-bottom: $section-padding-bottom;
 
   @include media(">lg") {
@@ -307,7 +367,10 @@ section.hero {
 
   h1 {
     color: $color-ui-white;
-    margin-bottom: 0;
+
+    @include media(">lg") {
+      margin-bottom: 0;
+    }
   }
 
   .action-calls {
@@ -346,56 +409,16 @@ section.hero {
 
 
 //
-// Tomorrow's currency
+// Pool product section
 // 
 
-section.tomorrows-currency {
-  .container {
-    height: 100%;
-  }
-
-  .row {
-    height: 50%;
-  }
-
-  .features {
-    width: 100%;
-    align-self: flex-end;
-    font-size: $body2-font-size;
-    line-height: $body2-line-height;
-    font-weight: $body2-font-weight;
-    margin-bottom: $body2-margin-bottom;
-    letter-spacing: $body2-letter-spacing;
-  }
-
-  .slick-slide {
-    color: $color-ui-medium;
-    text-align: center;
-    padding-left: $grid-gutter / 2;
-    padding-right: $grid-gutter / 2;
-    height: 72px;
-    outline: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-
-    @include media(">lg") {
-      height: 48px;
-      padding-left: $grid-gutter;
-      padding-right: $grid-gutter;
+section.pool {
+  .product-image {
+    img {
+      position: absolute;
+      right: -$grid-gutter;
+      width: 100%;
     }
-  }
-
-  .slick-initialized .slick-slide {
-    display: flex;
-    align-items: center;
-  }
-
-  .slick-current {
-    color: $color-ui-default;
-  }
-
-  .ghost {
-    display: none;
   }
 }
 

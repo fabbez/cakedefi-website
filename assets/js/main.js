@@ -1,5 +1,10 @@
 $(function () {
 
+  $('.hbg').click(function() {
+    $('.menu').toggle();
+    $(this).toggleClass('active');
+  });
+
   // Carousel for timeline
   $(".timeline").slick({
     autoplay: false,

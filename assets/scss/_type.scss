@@ -22,7 +22,8 @@ a {
   transition: $form-control-transition;
 
   &:hover {
-    color: $color-ui-light;
+    color: darken($color-ui-action, 20%);
+    text-decoration: underline;
   }
 }
 

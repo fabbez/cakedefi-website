@@ -48,8 +48,8 @@ content:
         label: Earn with Pool
         url: https://pool.cakedefi.com/
       image:
-        x1: products/pool/pool-ipad.png
-        x2: products/pool/pool-ipad@2x.png
+        x1: /img/products/pool/pool-ipad.png
+        x2: /img/products/pool/pool-ipad@2x.png
         alt: Screenshot of Pool on an iPad
     roadmap:
       headline: Roadmap
