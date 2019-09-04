@@ -39,10 +39,7 @@ content:
         <p data-scroll="once">Cake is a platform that empowers you to be in control of your finances by creating cashflow from Decentralized Finance.</p>
         <p data-scroll="once">Explore our range of products to see how you can regain your financial freedom.</p>
       tweets:
-        - user:
-            name: Ales Tomazin
-            handle: Tomas38A
-          tweet: I like the openness and transparency approach - this is what's lacking in the crypto community, which is more or less full of BS...
+        headline: What are others saying?
     pool:
       name: pool
       headline: Pool
@@ -101,13 +98,6 @@ content:
                 x1: /img/timeline/2019/oct/white-paper.png
                 x2: /img/timeline/2019/oct/white-paper@2x.png
                 alt: Image
-            - month: Nov
-              status: future
-              title: Staking Launch Platform goes live.
-              image:
-                x1: /img/timeline/2019/nov/staking-platform.png
-                x2: /img/timeline/2019/nov/staking-platform@2x.png
-                alt: Image
     team:
       name: team
       headline: Team
@@ -128,10 +118,22 @@ content:
           title: VP Business Operations
           image: bettina-hosp
           linkedin: https://www.linkedin.com/in/hiiambettina/
+        - name: Stefan Kuhn
+          title: Head of Compliance
+          image: stefan-kuhn
+          linkedin: https://www.linkedin.com/in/stefan-kuhn-98608b99/
         - name: Patricia Zinnecker
           title: HR & Comms Manager
           image: patricia-zinnecker
           linkedin: https://www.linkedin.com/in/patriciazinnecker/
+        - name: Dionne Ong
+          title: Finance & Secretarial
+          image: dionne-ong
+          linkedin: https://www.linkedin.com/in/beecheng1991/
+        - name: Genevie Loo
+          title: Software Engineer
+          image: genevie-loo
+          linkedin: https://www.linkedin.com/in/genevie-loo-2b15b151/
         - name: Andrey Saleba
           title: Senior Software Developer
           image: andrey-saleba
@@ -140,29 +142,31 @@ content:
           title: Software Engineer
           image: benjamin-zumbrunn
           linkedin: https://www.linkedin.com/in/benjamin-zumbrunn-310234107/
-        - name: Pavel Pekanov
-          title: Product Designer
-          image: pavel-pekanov
-          linkedin: https://www.linkedin.com/in/pekanov/
-        - name: Dionne Ong
-          title: Finance & Secretarial
-          image: dionne-ong
-          linkedin: https://www.linkedin.com/in/beecheng1991/
         - name: Dimitar Ivanov
           title: Front End Developer
           image: dimitar-ivanov
           linkedin: https://www.linkedin.com/in/dimitar-ivanov-7b552618a/
+        - name: Tanuj Soni
+          title: Software Engineer
+          image: tanuj-soni
+          linkedin: https://www.linkedin.com/in/tanujsoni
+        - name: Pavel Pekanov
+          title: Product Designer
+          image: pavel-pekanov
+          linkedin: https://www.linkedin.com/in/pekanov/
         - name: Aen
-          title: Designer
+          title: Product Designer
           image: aen
           linkedin: https://www.linkedin.com/in/aenism/
-        - name: Genevie Loo
-          title: Software Engineer
-          image: genevie-loo
-          linkedin: https://www.linkedin.com/in/genevie-loo-2b15b151/
       investors:
-        - name: John Rost
-          image: john-rost
+        headline: Investors & Advisors
+        investors:
+          - name: John Rost
+            title: Angel Investor
+            image: john-rost
+          # - name: Kenneth Oh
+          #   title: Legal Advisor
+          #   image: kenneth-oh
     jobs:
       name: jobs
       headline: We are hiring. Join us on an exciting journey building DeFi products!

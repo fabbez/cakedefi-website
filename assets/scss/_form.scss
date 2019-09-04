@@ -2,11 +2,13 @@ form {
   border: $form-control-border;
   border-radius: $form-control-border-radius;
   box-shadow: $base-box-shadow;
+  overflow: hidden;
 }
 
 .form-field {
   display: flex;
   justify-content: space-between;
+  background-color: $color-ui-white;
 
   input[type="text"],
   input[type="email"],

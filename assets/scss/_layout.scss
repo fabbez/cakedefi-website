@@ -120,6 +120,7 @@ body > header {
 
     @include media(">md") {
       display: block;
+      box-shadow: none;
     }
 
     ul {
@@ -417,6 +418,23 @@ section.hero {
 
 section.about {
   background-color: $color-ui-lightest;
+
+  .twitter-widget-wrapper {
+    display: inline-block;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    background-color: $color-ui-white;
+    overflow: hidden;
+
+    @include media(">xl") {
+      margin-bottom: $section-padding-bottom-lg;
+    }
+  }
+
+  .twitter-widget-clipper {
+    margin: -11px -1px -51px;
+    clip-path: inset(1px 1px 39px 1px);
+  }
 }
 
 
@@ -448,7 +466,7 @@ section.pool {
 //
 
 section.roadmap {
-  border-bottom: $base-border-style;
+  // border-bottom: $base-border-style;
 
   h2 {
     text-align: center;
@@ -493,6 +511,10 @@ section.roadmap {
 
   .timeline-nav {
     text-align: center;
+
+    @include media(">lg") {
+      margin-top: $grid-gutter;
+    }
   }
 
   .slick-arrow {
@@ -523,6 +545,7 @@ section.roadmap {
 
 section.subscribe {
   border-bottom: $base-border-style;
+  background-color: $color-ui-lightest;
 
   form {
     margin-top: $section-padding-top / 2;
@@ -659,6 +682,7 @@ section.jobs {
   ul {
     list-style: none;
     padding: 0;
+    margin-bottom: $grid-gutter;
 
     li {
       display: block;

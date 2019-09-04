@@ -29,7 +29,7 @@
             <h1 data-scroll="once">{{ $.Param "content.sections.hero.headline" }}</h1>
           </div>
           <div class="col col-lg-5 offset-lg-1 col-xl-4 offset-xl-1">
-            <div class="action-calls">
+            <div class="action-calls" data-scroll="once">
               <div class="featured-product">
                 <div>
                   <img src="{{ $.Param "content.sections.hero.featured_product.logo" }}" alt="{{ $.Param "content.sections.hero.featured_product.headline" }}">
@@ -71,12 +71,22 @@
     <section class="about" data-section-name="{{ $.Param "content.sections.about.name" }}">
       <div class="container-fluid">
         <div class="row">
-          <div class="col col-sm-10 col-xl-4 offset-xl-1">
+          <div class="col col-sm-10 col-xl-4 offset-xl-1 mbg1">
             <h2 data-scroll="once">{{ $.Param "content.sections.about.headline" }}</h2>
             {{ $.Param "content.sections.about.description" | safeHTML }}
           </div>
-          <div class="col col-xl-5 offset-xl-1">
-            tweet
+          <div class="tweets col col-lg-5 col-xl-4 offset-xl-2">
+            <h3 data-scroll="once">{{ $.Param "content.sections.about.tweets.headline" }}</h3>
+            <div class="twitter-widget-wrapper" data-scroll="once">
+              <div class="twitter-widget-clipper">
+                <blockquote class="twitter-tweet" data-conversation="none">
+                  <p lang="en" dir="ltr">I like the openness and transparency approach - this is what&#39;s lacking in the crypto
+                    community, which is more or less full of BS...</p>&mdash; Ales Tomazin (@Tomas38A) <a
+                    href="https://twitter.com/Tomas38A/status/1166767381714219009?ref_src=twsrc%5Etfw">August 28, 2019</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -86,7 +96,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col col-sm-10 col-lg-8 col-xl-4 offset-xl-1">
-            <h3 data-scroll="once">{{ $.Param "content.sections.pool.headline" }}</h3>
+            <h2 data-scroll="once">{{ $.Param "content.sections.pool.headline" }}</h2>
             <p data-scroll="once" class="mbg1">{{ $.Param "content.sections.pool.description" }}</p>
             <div data-scroll="once">
               <a class="btn" href="{{ $.Param "content.sections.pool.cta.url" }}">{{ $.Param "content.sections.pool.cta.label" }}</a>
@@ -163,12 +173,12 @@
             <p data-scroll="once">{{ $.Param "content.sections.team.description" }}</p>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           Map here
-        </div>
+        </div> -->
         <div class="row">
           {{ range $index, $founder := $.Param "content.sections.team.founders" }}
-          <div class="founder col col-md-6 col-xl-5{{ if eq $index 0 }} offset-xl-1{{ end }}">
+          <div class="founder col col-md-6 col-xl-5{{ if eq $index 0 }} offset-xl-1{{ end }}" data-scroll="once">
             <div class="row">
               <div class="col col-4 col-sm-2 col-lg-4">
                 <img src="/img/team/{{ $founder.image }}.jpg" srcset="/img/team/{{ $founder.image }}.jpg 1x, /img/team/{{ $founder.image }}@2x.jpg 2x" alt="{{ $founder.name }}’s thumbnail">
@@ -184,15 +194,32 @@
           {{ end }}
         </div>
             
-        <div class="row">
+        <div class="row mbg1">
           <div class="col col-xl-10 offset-xl-1">
             <div class="row">
               {{ range $member := $.Param "content.sections.team.members" }}
-              <div class="member col col-6 col-sm-3 col-xl-2">
+              <div class="member col col-6 col-sm-3 col-xl-2" data-scroll="once">
                 <img src="/img/team/{{ $member.image }}.jpg" srcset="/img/team/{{ $member.image }}.jpg 1x, /img/team/{{ $member.image }}@2x.jpg 2x" alt="{{ $member.name }}’s thumbnail">
                 <a class="member-linkedin" href="{{ $member.linkedin }}">LinkedIn</a>
                 <h4 class="h5">{{ $member.name }}</h4>
                 <small>{{ $member.title }}</small>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-xl-10 offset-xl-1">
+            <h3>{{ $.Param "content.sections.team.investors.headline" }}</h3>
+            <div class="row">
+              {{ range $investor := $.Param "content.sections.team.investors.investors" }}
+              <div class="member col col-6 col-sm-3 col-xl-2" data-scroll="once">
+                <img src="/img/investors/{{ $investor.image }}.jpg"
+                  srcset="/img/investors/{{ $investor.image }}.jpg 1x, /img/investors/{{ $investor.image }}@2x.jpg 2x"
+                  alt="{{ $investor.name }}’s thumbnail">
+                <h4 class="h5">{{ $investor.name }}</h4>
+                <small>{{ $investor.title }}</small>
               </div>
               {{ end }}
             </div>
@@ -203,8 +230,8 @@
     
     <section class="jobs" data-section-name="{{ $.Param "content.sections.jobs.name" }}">
       <div class="container-fluid">
-        <h2 class="h3">{{ $.Param "content.sections.jobs.headline" }}</h2>
-        <a class="btn btn-linkedin" href="{{ $.Param "content.sections.jobs.cta.url" }}">
+        <h2 class="h3" data-scroll="once">{{ $.Param "content.sections.jobs.headline" }}</h2>
+        <a class="btn btn-linkedin" href="{{ $.Param "content.sections.jobs.cta.url" }}" data-scroll="once">
           <div class="icon-wrapper">
             {{ $.Param "content.sections.jobs.cta.label" }}
             &nbsp;
