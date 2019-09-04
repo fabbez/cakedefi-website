@@ -165,7 +165,7 @@
 
     <section class="team" data-section-name="{{ $.Param "content.sections.team.name" }}">
       <div class="container-fluid">
-        <div class="row spb1">
+        <div class="row mbg1">
           <div class="col col-md-2 offset-xl-1">
             <h2 data-scroll="once">{{ $.Param "content.sections.team.headline" }}</h2>
           </div>
@@ -173,9 +173,20 @@
             <p data-scroll="once">{{ $.Param "content.sections.team.description" }}</p>
           </div>
         </div>
-        <!-- <div class="row">
-          Map here
-        </div> -->
+        <div class="row mbg1">
+          <div class="col">
+            <div class="team-world-map-wrapper">
+              <div class="team-world-map">
+                <div class="locations">
+                  {{ range $location := $.Param "content.sections.team.map.locations" }}
+                    <div class="location anchor-{{ $location.anchor }}" style="left:{{ $location.xpos }}%;top:{{ $location.ypos }}%"></div>
+                  {{ end }}
+                </div>
+                <img src="/svg/map/world-map.svg" alt="World map">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           {{ range $index, $founder := $.Param "content.sections.team.founders" }}
           <div class="founder col col-md-6 col-xl-5{{ if eq $index 0 }} offset-xl-1{{ end }}" data-scroll="once">
