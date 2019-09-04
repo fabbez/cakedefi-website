@@ -646,24 +646,48 @@ section.jobs {
     padding-bottom: $section-padding-bottom-lg;
   }
 
+  .brand {
+    display: block;
+  }
+
+  h4 {
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba($color-ui-white, 0.2);
+  }
+
   ul {
     list-style: none;
     padding: 0;
+
+    li {
+      display: block;
+    }
+
+    a {
+      display: block;
+      color: $color-ui-white;
+      text-decoration: none;
+      padding: 4px 0;
+      color: rgba($color-ui-white, 0.7);
+    }
   }
 
-  a {
-    color: $color-ui-white;
+  .social-links {
+    display: flex;
+  }
+
+  .social-link {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin-right: $grid-gutter;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+    }
   }
 }
 
-
-// 
-// Swarm
-// 
-
-.swarm {
-  position: fixed;
-  z-index: 0;
-  top: 0;
-  left: 0;
-}

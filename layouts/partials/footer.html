@@ -1,14 +1,14 @@
 <footer class="footer">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row mbg1">
       <div class="col col-xl-7 offset-xl-1">
-        <a class="brand" href="/">
+        <a class="brand mbg1" href="/">
           <img src="/svg/logos/logotype-cake.svg" alt="&copy; {{ $.Site.Params.company_name }}" width="120" height="24">
         </a>
         <h3>Grab your slice of the Decentralized Financial (DeFi) market.</h3>
       </div>
     </div>
-    <div class="row">
+    <div class="row mbg1">
       <div class="col col-lg-2 offset-xl-1">
         <h4>We&rsquo;re Cake</h4>
         <ul>
@@ -39,8 +39,8 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col offset-xl-1">
+    <div class="row mbg1">
+      <div class="social-links col offset-xl-1">
         <a href="{{ $.Site.Params.social.facebook }}" class="social-link facebook">
           <img src="/svg/icons/social/icon-facebook.svg" alt="Facebook">
         </a>
@@ -56,6 +56,11 @@
         <a href="{{ $.Site.Params.social.telegram }}" class="social-link telegram">
           <img src="/svg/icons/social/icon-telegram.svg" alt="Telegram">
         </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col offset-xl-1">
+        <p>&copy; {{ $.Site.Params.company_name }}</p>
       </div>
     </div>
   </div>
