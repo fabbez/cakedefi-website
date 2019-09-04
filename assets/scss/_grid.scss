@@ -82,22 +82,18 @@
 // Grid offset
 
 @for $i from 0 through ($grid-max-columns - 1) {
-  @if not ($i == 0) { // Avoid emitting useless .offset-0
-    .offset-#{$i} {
-      $num: $i / $grid-max-columns;
-      margin-left: if($num == 0, 0, percentage($num));
-    }
+  .offset-#{$i} {
+    $num: $i / $grid-max-columns;
+    margin-left: if($num == 0, 0, percentage($num));
   }
 }
 
 @each $bp, $w in $breakpoints {
   @include media(">#{$bp}") {
     @for $i from 0 through ($grid-max-columns - 1) {
-      @if not ($i == 0) { // Avoid emitting useless .offset-0
-        .offset-#{$bp}-#{$i} {
-          $num: $i / $grid-max-columns;
-          margin-left: if($num == 0, 0, percentage($num));
-        }
+      .offset-#{$bp}-#{$i} {
+        $num: $i / $grid-max-columns;
+        margin-left: if($num == 0, 0, percentage($num));
       }
     }
   }

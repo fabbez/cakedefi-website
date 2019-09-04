@@ -43,6 +43,8 @@ body {
 // 
 
 main {
+  overflow: hidden;
+
   > section {
     position: relative;
     z-index: 10;
@@ -114,6 +116,7 @@ body > header {
 
   .menu {
     display: none;
+    box-shadow: $base-box-shadow;
 
     @include media(">md") {
       display: block;
@@ -139,7 +142,7 @@ body > header {
       font-size: $body1-font-size;
       line-height: $body1-line-height;
       font-weight: $font-weight-medium;
-      border-bottom: $form-control-border;
+      border-bottom: $base-border-style;
 
       @include media(">md") {
         display: inline-block;
@@ -385,7 +388,7 @@ section.hero {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: $form-control-border;
+    border-bottom: $base-border-style;
   }
 
   .action-call-row {
@@ -402,9 +405,18 @@ section.hero {
     justify-content: space-between;
 
     &:first-child {
-      border-right: $form-control-border;
+      border-right: $base-border-style;
     }
   }
+}
+
+
+//
+// About
+// 
+
+section.about {
+  background-color: $color-ui-lightest;
 }
 
 
@@ -413,191 +425,131 @@ section.hero {
 // 
 
 section.pool {
+  border-bottom: $base-border-style;
+  padding-bottom: 0;
+
   .product-image {
+    margin-top: 48px;
+
+    @include media(">xl") {
+      margin-top: -160px;
+    }
+
     img {
-      position: absolute;
-      right: -$grid-gutter;
-      width: 100%;
+      width: 125%;
+      height: auto;
     }
   }
 }
 
 
 //
-// People first
+// Roadmap and Timeline
 //
 
-section.people-first {
-  .principle {
-    margin-bottom: $h4-margin-bottom;
+section.roadmap {
+  border-bottom: $base-border-style;
 
-    h4 {
-      margin-bottom: 0;
-    }
-  }
-}
-
-
-// 
-// Inclusive architecture
-//
-
-section.inclusive-architecture {
-  .row {
-    align-items: stretch;
-  }
-
-  .inclusive-image {
-    align-self: center;
-    width: 100%;
-    height: auto;
-  }
-
-  .architecture-diagram {
-    align-self: flex-end;
-    width: 100%;
-  }
-
-  .architecture-layer {
-    border-radius: $base-border-radius;
-    border: 1px solid $color-ui-medium;
-    font-weight: $font-weight-medium;
-    line-height: 2.4rem;
+  h2 {
     text-align: center;
-    padding: 18px 24px;
-    margin: 8px 0;
-
-    &:last-child {
-      font-size: 2.4rem;
-      color: $color-ui-black;
-      border: 0;
-      background-color: #fee2f8;
-      background-image: linear-gradient(100deg, #E3FFDB 0%, #FFB4B4 90%);
-    }
-  }
-}
-
-
-//
-// Alice's story
-//
-
-section.alices-story {
-  position: relative;
-
-  .story {
-    margin-top: $section-padding-top;
-
-    @include media(">lg") {
-      margin-top: $section-padding-top-lg;
-    }
   }
 
-  .story-image {
-    background-color: $color-ui-dark;
+  .slick-slide {
+    width: 320px;
+  }
+
+  .timeline-event {
+    &.future {
+      color: $color-ui-medium;
+    }
+  }
+  .event-box {
+    background: $color-ui-white;
+    border: $base-border-style;
+    box-shadow: $base-box-shadow;
     border-radius: $base-border-radius;
+    margin: 16px;
+  }
 
-    @include media(">lg") {
-      min-height: 320px;
-    }
+  .event-content {
+    padding: 16px;
+    min-height: 144px;
+  }
 
+  h4 {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .event-image {
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+  
     img {
       width: 100%;
       height: auto;
     }
   }
 
-  .story-text {
-    padding-bottom: 48px;
-
-    @include media(">lg") {
-      padding-bottom: 96px;
-    }
+  .timeline-nav {
+    text-align: center;
   }
 
-  .slick-dots {
-    list-style: none;
-    margin: 0 -7% 0;
-    padding: 0;
-    display: flex;
-    position: relative;
-
-    // Track
-    &:after {
-      content: "";
-      width: 86%;
-      height: 1px;
-      background-color: $color-ui-medium;
-      position: absolute;
-      left: 7%;
-      right: 7%;
-      top: 15.5px;
-    }
-    
-    li {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-
-      // Dot
-      &:after {
-        content: "";
-        width: 8px;
-        height: 8px;
-        border-radius: 4px;
-        background-color: $color-ui-dark;
-        position: absolute;
-        left: 50%;
-        margin-left: -4px;
-        top: 12px;
-        transition: all 0.3s ease;
-      }
-    }
-
-    button {
-      opacity: 0;
-      appearance: none;
-      outline: 0;
-      flex-grow: 1;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      height: 32px;
-    }
+  .slick-arrow {
+    width: 48px;
+    height: 48px;
+    @include text-hide;
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: $grid-gutter / 2;
+    margin-right: $grid-gutter / 2;
   }
 
-  li.slick-active {
-    &:after {
-      content: "";
-      width: 24px;
-      height: 24px;
-      border-radius: 12px;
-      background-color: $color-ui-default;
-      position: absolute;
-      left: 50%;
-      margin-left: -12px;
-      top: 4px;
-    }
+  .slick-next {
+    background-image: url(/svg/icons/icon-arrow-next.svg);
+  }
+
+  .slick-prev {
+    background-image: url(/svg/icons/icon-arrow-prev.svg);
   }
 }
 
 
 //
-// About NZIA
+// Subscribe
 //
 
-.about-nzia {
-  .team-member {
-    margin-bottom: $grid-gutter;
+section.subscribe {
+  border-bottom: $base-border-style;
 
-    img {
+  form {
+    margin-top: $section-padding-top / 2;
+  }
+}
+
+
+//
+// Team
+//
+
+section.team {
+  .founder,
+  .member {
+    .member-linkedin {
       display: block;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      margin-bottom: 8px;
+      width: 32px;
+      height: 32px;
+      border-radius: $base-border-radius;
+      background-image: url(/svg/icons/icon-linkedin.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      box-shadow: $base-box-shadow;
+
+      @include text-hide;
+      background-color: $color-linkedin; // this needs to be after text-hide()
     }
 
     h4 {
@@ -605,104 +557,77 @@ section.alices-story {
     }
 
     small {
+      font-size: $caption-font-size;
+      line-height: $caption-line-height;
+      color: $color-ui-dark;
       display: block;
-      margin-bottom: 0.8rem;
+    }
+  }
+
+  .founder {
+    margin-bottom: 48px;
+
+    .row {
+      align-items: flex-start;
     }
 
-    p {
-      font-size: $body2-font-size;
-      line-height: $body2-line-height;
-      font-weight: $body2-font-weight;
-      margin-bottom: $body2-margin-bottom;
-      letter-spacing: $body2-letter-spacing;
-    }
-
-    &.non-human {
-      img {
-        width: auto;
-        height: auto;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        border-radius: 0;
+    .member-linkedin {
+      left: 72px;
+      top: 56px;
+      
+      @include media(">lg") {
+        left: calc(100% - 48px);
+        top: calc(100% - 40px);
       }
+
+      @include media(">xl") {
+        left: calc(100% - 56px);
+        top: calc(100% - 48px);
+      }
+
+      @include media(">ul") {
+        left: calc(100% - 64px);
+        top: calc(100% - 56px);
+      }
+    }
+
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 80px;
+      height: auto;
+
+      @include media(">lg") {
+        width: 100%;
+      }
+    }
+  }
+
+  .member {
+    margin-bottom: 32px;
+
+    .member-linkedin {
+      left: 72px;
+      top: 56px;
+    }
+
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 80px;
+      height: auto;
+      margin-bottom: 16px;
     }
   }
 }
 
-
 //
-// Get in touch
+// Jobs
 //
 
-section.get-in-touch {
-  form {
-    border: 1px solid $color-ui-medium;
-    border-radius: $form-control-border-radius;
-    margin-bottom: $grid-gutter;
-  }
-
-  .form-field {
-    border-bottom: $form-control-border;
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      display: block;
-      appearance: none;
-      outline: none;
-      border: 0;
-      width: 100%;
-      margin: 0;
-      padding-left: $form-control-padding-horizontal;
-      padding-right: $form-control-padding-horizontal;
-      padding-top: $form-control-padding-vertical - 0.5px;
-      padding-bottom: $form-control-padding-vertical - 0.5px;
-      font-size: $form-control-font-size;
-      line-height: $form-control-line-height;
-      background-color: $form-control-bg;
-      color: $form-control-color;
-      resize: none;
-
-      &::placeholder {
-        color: $color-ui-medium;
-        transition: $form-control-transition;
-      }
-
-      &:focus {
-        &::placeholder {
-          color: $color-ui-dark;
-        }
-      }
-    }
-
-    &:nth-last-child(2) {
-      border-bottom: 0;
-    }
-  }
-
-  .form-footer {
-
-    @include media(">lg") {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .form-helper {
-      padding-left: $form-control-padding-horizontal;
-      padding-right: $form-control-padding-horizontal;
-      padding-top: $form-control-padding-vertical - 0.5px;
-      padding-bottom: $form-control-padding-vertical - 0.5px;
-      font-size: $body2-font-size;
-      line-height: $form-control-line-height;
-      background-color: $form-control-bg;
-      color: $color-ui-light;
-    }
-
-    .btn {
-      display: block;
-    }
-  }
+section.jobs {
+  text-align: center;
+  background-color: $color-ui-lightest;
 }
 
 
@@ -711,6 +636,8 @@ section.get-in-touch {
 // 
 
 .footer {
+  background-color: $color-ui-darkest;
+  color: $color-ui-white;
   padding-top: $section-padding-top;
   padding-bottom: $section-padding-bottom;
 
@@ -719,21 +646,13 @@ section.get-in-touch {
     padding-bottom: $section-padding-bottom-lg;
   }
 
-  .row {
-    align-items: center;
+  ul {
+    list-style: none;
+    padding: 0;
   }
 
-  .btn  {
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-
-  .copyright {
-    margin-top: 32px;
-
-    p {
-      margin-bottom: 0;
-    }
+  a {
+    color: $color-ui-white;
   }
 }
 

@@ -13,6 +13,7 @@ meta:
 content:
   sections:
     hero:
+      name: hero
       headline: Grab your slice of the Decentralized Financial (DeFi) market.
       featured_product:
         logo: /svg/logos/logo-pool.svg
@@ -31,7 +32,8 @@ content:
         cta:
           label: Join Now
           url: https://t.me/CakeDeFi_EN
-    introduction:
+    about:
+      name: about
       headline: DeFi accessible to anyone.
       description:
         <p data-scroll="once">Cake is a platform that empowers you to be in control of your finances by creating cashflow from Decentralized Finance.</p>
@@ -42,6 +44,7 @@ content:
             handle: Tomas38A
           tweet: I like the openness and transparency approach - this is what's lacking in the crypto community, which is more or less full of BS...
     pool:
+      name: pool
       headline: Pool
       description: Introducing Pool, a platform that lets you earn real-time passive income from cryptocurrencies, by staking in masternode pools.
       cta:
@@ -52,6 +55,7 @@ content:
         x2: /img/products/pool/pool-ipad@2x.png
         alt: Screenshot of Pool on an iPad
     roadmap:
+      name: roadmap
       headline: Roadmap
       description: Subscribe to be notified of announcements and product releases.
       subscribe:
@@ -62,41 +66,50 @@ content:
       timeline:
         - year: 2019
           events:
-            - month: Nov
-              status: future
-              title: Staking Launch Platform goes live.
-            - month: Oct
-              status: future
-              title: DeFi White Paper
-            - month: Sep
-              status: future
-              title: Conceptualization of DeFi blockchain.
-              image:
-                1x: timeline/2019/sep/concept.jpg
-                2x: timeline/2019/sep/concept@2x.jpg
-                alt: Conceptualization
-            - month: Aug
-              status: past
-              title: Public launch of Pool by Cake.
-              image:
-                1x: timeline/2019/aug/pool.png
-                2x: timeline/2019/aug/pool@2x.png
-                alt: Pool logo
-            - month: Jun
-              status: past
-              title: Company launch with 1.4m USD seed round.
-              image:
-                1x: timeline/2019/jun/cake.png
-                2x: timeline/2019/jun/cake@2x.png
-                alt: Cake logo
             - month: Apr
               status: past
               title: Working on first Pool concept.
               image:
-                1x: timeline/2019/apr/founders.jpg
-                2x: timeline/2019/apr/founders@2x.jpg
+                x1: /img/timeline/2019/apr/founders.jpg
+                x2: /img/timeline/2019/apr/founders@2x.jpg
                 alt: Founders photo
+            - month: Jun
+              status: past
+              title: Company launch with 1.4m USD seed round.
+              image:
+                x1: /img/timeline/2019/jun/cake.png
+                x2: /img/timeline/2019/jun/cake@2x.png
+                alt: Cake logo
+            - month: Aug
+              status: past
+              title: Public launch of Pool by Cake.
+              image:
+                x1: /img/timeline/2019/aug/pool.png
+                x2: /img/timeline/2019/aug/pool@2x.png
+                alt: Pool logo
+            - month: Sep
+              status: future
+              title: Conceptualization of DeFi blockchain.
+              image:
+                x1: /img/timeline/2019/sep/concept.jpg
+                x2: /img/timeline/2019/sep/concept@2x.jpg
+                alt: Conceptualization
+            - month: Oct
+              status: future
+              title: DeFi White Paper
+              image:
+                x1: /img/timeline/2019/oct/white-paper.png
+                x2: /img/timeline/2019/oct/white-paper@2x.png
+                alt: Image
+            - month: Nov
+              status: future
+              title: Staking Launch Platform goes live.
+              image:
+                x1: /img/timeline/2019/nov/staking-platform.png
+                x2: /img/timeline/2019/nov/staking-platform@2x.png
+                alt: Image
     team:
+      name: team
       headline: Team
       description: Cake is founded in the beginning of 2019 by Dr. Julian Hosp and U-Zyn Chua to solve major financial pain points in people’s lives. We are innovators from diverse backgrounds and industries.
       founders:
@@ -147,7 +160,11 @@ content:
           title: Software Engineer
           image: genevie-loo
           linkedin: https://www.linkedin.com/in/genevie-loo-2b15b151/
-    hiring:
+      investors:
+        - name: John Rost
+          image: john-rost
+    jobs:
+      name: jobs
       headline: We are hiring. Join us on an exciting journey building DeFi products!
       cta:
         label: Explore Opportunities

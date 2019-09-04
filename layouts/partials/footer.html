@@ -1,8 +1,61 @@
-<footer class="footer nosnap">
-  <div class="container">
+<footer class="footer">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col col-lg-6 offset-lg-6">
-        &copy; {{ $.Site.Params.company_name }}
+      <div class="col col-xl-7 offset-xl-1">
+        <a class="brand" href="/">
+          <img src="/svg/logos/logotype-cake.svg" alt="&copy; {{ $.Site.Params.company_name }}" width="120" height="24">
+        </a>
+        <h3>Grab your slice of the Decentralized Financial (DeFi) market.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-lg-2 offset-xl-1">
+        <h4>We&rsquo;re Cake</h4>
+        <ul>
+          <li><a href="/#{{ $.Param "content.sections.about.name" }}">{{ $.Param "content.sections.about.name" | humanize }}</a></li>
+          <li><a href="/#{{ $.Param "content.sections.roadmap.name" }}">{{ $.Param "content.sections.roadmap.name"| humanize }}</a></li>
+          <li><a href="/#{{ $.Param "content.sections.team.name" }}">{{ $.Param "content.sections.team.name"| humanize }}</a></li>
+          <li><a href="/#{{ $.Param "content.sections.jobs.name" }}">{{ $.Param "content.sections.jobs.name"| humanize }}</a></li>
+        </ul>
+      </div>
+      <div class="col col-lg-2">
+        <h4>Media</h4>
+        <ul>
+          <li><a href="/press">Press Materials</a></li>
+          <li><a href="/media">Media Mentions</a></li>
+        </ul>
+      </div>
+      <div class="col col-lg-2">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://pool.cakedefi.com/">Pool</a></li>
+        </ul>
+      </div>
+      <div class="col col-lg-2">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/imprint">Imprint</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col offset-xl-1">
+        <a href="{{ $.Site.Params.social.facebook }}" class="social-link facebook">
+          <img src="/svg/icons/social/icon-facebook.svg" alt="Facebook">
+        </a>
+        <a href="{{ $.Site.Params.social.twitter }}" class="social-link twitter">
+          <img src="/svg/icons/social/icon-twitter.svg" alt="Twitter">
+        </a>
+        <a href="{{ $.Site.Params.social.reddit }}" class="social-link reddit">
+          <img src="/svg/icons/social/icon-reddit.svg" alt="Reddit">
+        </a>
+        <a href="{{ $.Site.Params.social.youtube }}" class="social-link youtube">
+          <img src="/svg/icons/social/icon-youtube.svg" alt="YouTube">
+        </a>
+        <a href="{{ $.Site.Params.social.telegram }}" class="social-link telegram">
+          <img src="/svg/icons/social/icon-telegram.svg" alt="Telegram">
+        </a>
       </div>
     </div>
   </div>

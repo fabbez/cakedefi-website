@@ -2,13 +2,15 @@ baseURL = "https://cakedefi.com/"
 googleAnalytics = ""
 languageCode = "en-us"
 title = "Cake"
-uen = "201918368M"
-[social]
-  facebook = "https://facebook.com/cakedefi/"
-  twitter = "https://twitter.com/cakedefi"
-  reddit = "https://reddit.com/r/cakedefi/"
-  youtube = "https://www.youtube.com/channel/UCkRa0RHkJ9Udd_mVWl8fa8A"
-  telegram = "https://t.me/CakeDeFi_EN"
+
+[params]
+  uen = "201918368M"
+  [params.social]
+    facebook = "https://facebook.com/cakedefi/"
+    twitter = "https://twitter.com/cakedefi"
+    reddit = "https://reddit.com/r/cakedefi/"
+    youtube = "https://www.youtube.com/channel/UCkRa0RHkJ9Udd_mVWl8fa8A"
+    telegram = "https://t.me/CakeDeFi_EN"
 
 [blackfriday]
 

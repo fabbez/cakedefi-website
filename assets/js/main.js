@@ -6,21 +6,22 @@ $(function () {
   });
 
   // Carousel for timeline
-  $(".timeline").slick({
+  $(".timeline-slider").slick({
+    appendArrows: '.timeline-nav',
+    arrows: true,
     autoplay: false,
     autoplaySpeed: 5000,
-    infinite: true,
-    arrows: false,
-    dots: true,
-    appendDots: '.story-dots',
-    pauseOnDotsHover: true,
+    centerMode: true,
+    dots: false,
     draggable: false,
-    slidesToScroll: 1,
+    infinite: false,
+    initialSlide: 5,
+    mobileFirst: true,
     slidesToShow: 1,
-    fade: true,
+    slidesToScroll: 1,
     speed: 500,
-    waitForAnimate: false,
-    mobileFirst: true
+    variableWidth: true,
+    waitForAnimate: false
   });
 
 });

@@ -4,6 +4,7 @@
   font-weight: $button-font-weight;
   line-height: $button-line-height;
   text-decoration: none;
+  margin: 0;
   padding-right: $button-padding-horizontal;
   padding-left: $button-padding-horizontal;
   padding-bottom: $button-padding-vertical;
@@ -19,6 +20,37 @@
   &:hover {
     background-color: darken($button-primary-bg, 10%);
     color: $button-primary-color;
+    text-decoration: none;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  &.btn-plain {
+    background-color: $color-ui-lightest;
+    color: $color-ui-action;
+
+    &:hover {
+      background-color: lighten($color-ui-action, 42%);
+    }
+  }
+
+  &.btn-linkedin {
+    background-color: $color-linkedin;
+
+    &:hover {
+      background-color: darken($color-linkedin, 10%);
+    }
   }
 
   &[disabled] {
