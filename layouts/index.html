@@ -22,7 +22,7 @@
 
   <main>
 
-    <section class="hero" data-section-name="home">
+    <section class="hero" id="home" data-scroll data-scroll-showCallback="heroIn()" data-scroll-hideCallback="heroOut()">
       <div class="container-fluid">
         <div class="row">
           <div class="col col-lg-6 col-xl-5 offset-xl-1">
@@ -64,11 +64,10 @@
           </div>
         </div>
       </div>
-      <div class="scroll-detector" data-scroll-showCallback="playHeroAnimation()" data-scroll-hideCallback="pauseHeroAnimation"></div>
       <!-- animation hero here -->
     </section>
 
-    <section class="about" data-section-name="{{ $.Param "content.sections.about.name" }}">
+    <section class="about" id="{{ $.Param "content.sections.about.name" }}">
       <div class="container-fluid">
         <div class="row">
           <div class="col col-sm-10 col-xl-4 offset-xl-1 mbg1">
@@ -92,7 +91,7 @@
       </div>
     </section>
 
-    <section class="pool" data-section-name="{{ $.Param "content.sections.pool.name" }}">
+    <section class="pool" id="{{ $.Param "content.sections.pool.name" }}">
       <div class="container-fluid">
         <div class="row">
           <div class="col col-sm-10 col-lg-8 col-xl-4 offset-xl-1">
@@ -111,7 +110,7 @@
       </div>
     </section>
 
-    <section class="roadmap" data-section-name="{{ $.Param "content.sections.roadmap.name" }}">
+    <section class="roadmap" id="{{ $.Param "content.sections.roadmap.name" }}">
       <div class="container-fluid">
         <div class="row">
           <div class="col">
@@ -165,7 +164,7 @@
       </div>
     </section>
 
-    <section class="team" data-section-name="{{ $.Param "content.sections.team.name" }}">
+    <section class="team" id="{{ $.Param "content.sections.team.name" }}">
       <div class="container-fluid">
         <div class="row mbg1">
           <div class="col col-md-2 offset-xl-1">
@@ -241,7 +240,7 @@
       </div>
     </section>
     
-    <section class="jobs" data-section-name="{{ $.Param "content.sections.jobs.name" }}">
+    <section class="jobs" id="{{ $.Param "content.sections.jobs.name" }}">
       <div class="container-fluid">
         <h2 class="h3" data-scroll="once">{{ $.Param "content.sections.jobs.headline" }}</h2>
         <a class="btn btn-linkedin" href="{{ $.Param "content.sections.jobs.cta.url" }}" data-scroll="once">

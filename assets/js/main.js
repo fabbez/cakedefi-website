@@ -33,16 +33,22 @@ document.addEventListener('DOMContentLoaded', function () {
       visible: 'scroll-visible',
       hidden: 'scroll-hidden'
     },
+    addHeight: false,
+    centerVertical: false,
     once: false,
   }, document.body, window);
 
   trigger.callScope = scope;
 
-  scope.pauseHeroAnimation = function () {
+  scope.heroOut = function () {
+    $('body > header').hide().addClass('sticky').fadeIn();
     // pause hero animation
   };
 
-  scope.playHeroAnimation = function () {
+  scope.heroIn = function () {
+    $('body > header').fadeOut(function() {
+      $(this).removeClass('sticky').show();
+    });
     // play hero animation
   };
 });
