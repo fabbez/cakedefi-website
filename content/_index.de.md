@@ -45,7 +45,7 @@ content:
       headline: Pool
       description: Pool ist eine Plattform bei der du in Echtzeit durch Masternode Staking Cashflow aus Kryptowährungen erhältst.
       cta:
-        label: Erhalte Cashflow mit Pool
+        label: Cashflow mit Pool
         url: https://pool.cakedefi.com/
       image:
         x1: /img/products/pool/pool-ipad.png
@@ -60,6 +60,9 @@ content:
           placeholder: E-Mail-Addresse
         button:
           label: Subscribe
+        messages:
+          success: Danke fürs Abonnieren!
+          error: Hoppla! Das ist nicht gehen.
       timeline:
         - year: 2019
           events:
@@ -155,7 +158,7 @@ content:
           image: ewald-serafini
           linkedin: https://www.linkedin.com/in/ewald-serafini/
       investors:
-        headline: Investors & Advisors
+        headline: Investoren & Berater
     jobs:
       name: jobs
       headline: Wir suchen dich! Bewirb dich und sei in einem der raschest wachsenden Blockchain Firmen dabei!

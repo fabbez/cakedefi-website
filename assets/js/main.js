@@ -15,7 +15,7 @@ $(function () {
     dots: false,
     draggable: false,
     infinite: false,
-    initialSlide: 4,
+    initialSlide: 2,
     mobileFirst: true,
     slidesToShow: 1,
     slidesToScroll: 1,

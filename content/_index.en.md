@@ -18,7 +18,7 @@ content:
       featured_product:
         logo: /svg/logos/logo-pool.svg
         headline: Pool
-        description: Earn passive income from cryptocurrencies.
+        description: Get cashflow from cryptocurrencies.
         cta:
           label: Earn with Pool
           url: https://pool.cakedefi.com/
@@ -43,7 +43,7 @@ content:
     pool:
       name: pool
       headline: Pool
-      description: Introducing Pool, a platform that lets you earn real-time passive income from cryptocurrencies, by staking in masternode pools.
+      description: Introducing Pool, a platform that lets you earn real-time cashflow from cryptocurrencies, by staking in masternode pools.
       cta:
         label: Earn with Pool
         url: https://pool.cakedefi.com/
@@ -60,6 +60,9 @@ content:
           placeholder: Email address
         button:
           label: Subscribe
+        messages:
+          success: Thank you for subscribing!
+          error: Oops! That didn't go through.
       timeline:
         - year: 2019
           events:

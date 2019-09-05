@@ -6,7 +6,7 @@ meta:
   description: Imprint
   og:
     title: Cake
-    description: Imprintt
+    description: Imprint
     site_name: Cake
     image: https://cakedefi.com/assets/img/social/abstract.jpg
     image_type: image/jpg

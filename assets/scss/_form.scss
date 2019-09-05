@@ -43,5 +43,9 @@ form {
 
   .btn-plain {
     background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
