@@ -24,3 +24,10 @@ DefaultContentLanguage = "en"
     company_name = "Cake Pte. Ltd."
     copyright = "All Rights Reserved"
     weight = 3
+  [languages.de]
+    languageName = "Deutsche"
+    title = "Cake"
+    description = "Holen Sie sich Ihren Teil des Dezentralen Finanzmarkts (DeFi)."
+    company_name = "Cake Pte. Ltd."
+    copyright = "Alle Rechte vorbehalten"
+    weight = 2

@@ -25,7 +25,7 @@ content:
       what_is_defi:
         headline: Was ist DeFi?
         cta:
-          label: Schau dir dieses Video an:
+          label: Schau dir dieses Video an
           url: https://www.youtube.com/watch?v=EqSY2ryEoZU
       community:
         headline: Sei in unserer Telegram Community dabei
@@ -159,6 +159,13 @@ content:
           linkedin: https://www.linkedin.com/in/ewald-serafini/
       investors:
         headline: Investoren & Berater
+        investors:
+          - name: John Rost
+            title: Angel Investor
+            image: john-rost
+          # - name: Kenneth Oh
+          #   title: Legal Advisor
+          #   image: kenneth-oh
     jobs:
       name: jobs
       headline: Wir suchen dich! Bewirb dich und sei in einem der raschest wachsenden Blockchain Firmen dabei!

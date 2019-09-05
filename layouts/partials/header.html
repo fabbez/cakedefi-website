@@ -19,7 +19,16 @@
           <li><a href="/#pool">Pool</a></li>
           <li><a href="/#roadmap">Roadmap</a></li>
           <li><a href="/#team">Team</a></li>
-          <!-- <li class="lang-switcher"><a href="#lang-switcher">{{ .Language }}</a></li> -->
+          <li class="lang-switcher">
+            <a href="#lang-menu">{{ .Language }}</a>
+            <div class="lang-menu" id="lang-switcher">
+              <ul>
+                {{ range $.Site.Home.AllTranslations }}
+                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
 

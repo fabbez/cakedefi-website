@@ -186,8 +186,47 @@ body > header {
     }
 
     .lang-switcher {
+      position: relative;
+
+      &.active .lang-menu {
+        display: block;
+      }
+
       > a {
         text-transform: uppercase;
+      }
+
+      .lang-menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 1px);
+        width: 100%;
+        min-width: 128px;
+        box-shadow: $base-box-shadow;
+
+        a {
+          color: $color-ui-action;
+        }
+      }
+
+      ul {
+        text-align: left;
+        margin: 0;
+        background-color: $color-ui-white;
+        border-radius: $base-border-radius;
+      }
+
+      li {
+        display: block;
+        border-bottom: $base-border-style;
+      }
+
+      a {
+        padding-right: $button-padding-horizontal;
+        padding-left: $button-padding-horizontal;
+        padding-bottom: $button-padding-vertical / 2;
+        padding-top: $button-padding-vertical / 2;
       }
     }
   }

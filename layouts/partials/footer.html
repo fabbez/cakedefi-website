@@ -5,14 +5,14 @@
         <a class="brand mbg1" href="/" data-scroll="once">
           <img src="/svg/logos/logotype-cake.svg" alt="&copy; {{ $.Site.Params.company_name }}" width="120" height="24">
         </a>
-        <h3 data-scroll="once">Grab your slice of the Decentralized Financial (DeFi) market.</h3>
+        <h3 data-scroll="once">{{ $.Site.Params.description }}</h3>
       </div>
     </div>
     <div class="row mbg1" data-scroll="once">
       <div class="col col-sm-6 col-lg-2 offset-xl-1">
         <h4>We&rsquo;re Cake</h4>
         <ul>
-          <li><a href="/#{{ $.Param "content.sections.about.name" }}">{{ $.Param "content.sections.about.name" | humanize }}</a></li>
+          <li><a href="{{ relref . "/#about" }}">{{ $.Param "content.sections.about.name" | humanize }}</a></li>
           <li><a href="/#{{ $.Param "content.sections.roadmap.name" }}">{{ $.Param "content.sections.roadmap.name"| humanize }}</a></li>
           <li><a href="/#{{ $.Param "content.sections.team.name" }}">{{ $.Param "content.sections.team.name"| humanize }}</a></li>
           <li><a href="/#{{ $.Param "content.sections.jobs.name" }}">{{ $.Param "content.sections.jobs.name"| humanize }}</a></li>
@@ -21,8 +21,7 @@
       <div class="col col-sm-6 col-lg-2">
         <h4>Media</h4>
         <ul>
-          <li><a href="/press">Press Materials</a></li>
-          <li><a href="/media">Media Mentions</a></li>
+          <li><a href="{{ relref . "/press" }}">Press Materials</a></li>
         </ul>
       </div>
       <div class="col col-sm-6 col-lg-2">
@@ -34,8 +33,8 @@
       <div class="col col-sm-6 col-lg-2">
         <h4>Legal</h4>
         <ul>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/imprint">Imprint</a></li>
+          <li><a href="{{ relref . "/privacy-policy" }}">Privacy Policy</a></li>
+          <li><a href="{{ relref . "/imprint" }}">Imprint</a></li>
         </ul>
       </div>
     </div>
