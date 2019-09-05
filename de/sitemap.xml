@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cakedefi.com/de/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cakedefi.com/de/imprint/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/imprint/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/imprint/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cakedefi.com/de/press/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/press/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/press/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cakedefi.com/de/privacy-policy/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/privacy-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/privacy-policy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cakedefi.com/de/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cakedefi.com/de/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cakedefi.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://cakedefi.com/de/tags/"
+                />
+  </url>
+  
+</urlset>
