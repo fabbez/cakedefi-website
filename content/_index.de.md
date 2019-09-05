@@ -166,6 +166,38 @@ content:
           # - name: Kenneth Oh
           #   title: Legal Advisor
           #   image: kenneth-oh
+      map:
+        locations:
+          - label: Singapore, Singapore
+            xpos: 81
+            ypos: 57.4
+            anchor: se
+            members: julian-hosp, u-zyn-chua, bettina-hosp, ben-zumbrunn, aen, dionne-ong
+          - label: Munich, Germany
+            xpos: 49.4
+            ypos: 22.3
+            members: patricia-zinnecker
+            anchor: nw
+          - label: Krasnodar, Russia
+            xpos: 57.7
+            ypos: 24.8
+            anchor: s
+            members: pavel-pekanov
+          - label: Penang, Malaysia
+            xpos: 79.7
+            ypos: 54.3
+            anchor: ne
+            members: genevie-loo
+          - label: Indore, India
+            xpos: 70.8
+            ypos: 41.3
+            anchor: sw
+            members: tanuj-soni
+          - label: Bolzano, Italy
+            xpos: 49.2
+            ypos: 23.3
+            anchor: sw
+            members: ewald-serafini
     jobs:
       name: jobs
       headline: Wir suchen dich! Bewirb dich und sei in einem der raschest wachsenden Blockchain Firmen dabei!
