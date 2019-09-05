@@ -16,7 +16,7 @@
   {{ end }}
 </head>
 
-<body>
+<body class="home">
 
   {{ partial "header.html" . }}
 
@@ -41,7 +41,7 @@
               <div class="action-call-row">
                 <div class="action-call">
                   <h4 class="h5">{{ $.Param "content.sections.hero.what_is_defi.headline" }}</h4>
-                  <a class="btn btn-plain" href="{{ $.Param "content.sections.hero.what_is_defi.cta.url" }}">
+                  <a class="btn btn-plain" href="{{ $.Param "content.sections.hero.what_is_defi.cta.url" }}" target="_blank">
                     <div class="icon-wrapper">
                       <img src="/svg/icons/icon-play-circle.svg" alt="Play icon" class="icon">
                       &nbsp;
@@ -51,7 +51,7 @@
                 </div>
                 <div class="action-call">
                   <h4 class="h5">{{ $.Param "content.sections.hero.community.headline" }}</h4>
-                  <a class="btn btn-plain" href="{{ $.Param "content.sections.hero.community.cta.url" }}">
+                  <a class="btn btn-plain" href="{{ $.Param "content.sections.hero.community.cta.url" }}" target="_blank">
                     <div class="icon-wrapper">
                       <img src="/svg/icons/icon-telegram.svg" alt="Play icon" class="icon">
                       &nbsp;
@@ -99,7 +99,9 @@
             <h2 data-scroll="once">{{ $.Param "content.sections.pool.headline" }}</h2>
             <p data-scroll="once" class="mbg1">{{ $.Param "content.sections.pool.description" }}</p>
             <div data-scroll="once">
-              <a class="btn" href="{{ $.Param "content.sections.pool.cta.url" }}">{{ $.Param "content.sections.pool.cta.label" }}</a>
+              <a class="btn" href="{{ $.Param "content.sections.pool.cta.url" }}" target="_blank">
+                {{ $.Param "content.sections.pool.cta.label" }}
+              </a>
             </div>
           </div>
           <div class="product-image col col-lg-8 offset-lg-4 col-xl-7 offset-xl-0 col-ul-6 offset-ul-1">
@@ -193,7 +195,7 @@
             <div class="row">
               <div class="col col-4 col-sm-2 col-lg-4">
                 <img src="/img/team/{{ $founder.image }}.jpg" srcset="/img/team/{{ $founder.image }}.jpg 1x, /img/team/{{ $founder.image }}@2x.jpg 2x" alt="{{ $founder.name }}’s thumbnail">
-                <a class="member-linkedin" href="{{ $founder.linkedin }}">LinkedIn</a>
+                <a class="member-linkedin" href="{{ $founder.linkedin }}" target="_blank">LinkedIn</a>
               </div>
               <div class="col col-8 col-md-6 col-lg-8">
                 <h4 class="h5">{{ $founder.name }}</h4>
@@ -211,7 +213,7 @@
               {{ range $member := $.Param "content.sections.team.members" }}
               <div class="member col col-6 col-sm-3 col-xl-2" data-scroll="once">
                 <img src="/img/team/{{ $member.image }}.jpg" srcset="/img/team/{{ $member.image }}.jpg 1x, /img/team/{{ $member.image }}@2x.jpg 2x" alt="{{ $member.name }}’s thumbnail">
-                <a class="member-linkedin" href="{{ $member.linkedin }}">LinkedIn</a>
+                <a class="member-linkedin" href="{{ $member.linkedin }}" target="_blank">LinkedIn</a>
                 <h4 class="h5">{{ $member.name }}</h4>
                 <small>{{ $member.title }}</small>
               </div>

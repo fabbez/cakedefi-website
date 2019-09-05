@@ -1,11 +1,11 @@
 ---
 title: Cake
-long_title: Simple and accessible finance for everyone.
+long_title: Einfacher Zugang zum Finanzsystem für jeden.
 meta:
-  description: Simple and accessible finance for everyone.
+  description: Einfacher Zugang zum Finanzsystem für jeden.
   og:
     title: Cake
-    description: Simple and accessible finance for everyone.
+    description: Einfacher Zugang zum Finanzsystem für jeden.
     site_name: Cake
     image: https://cakedefi.com/assets/img/social/abstract.jpg
     image_type: image/jpg
@@ -14,38 +14,38 @@ content:
   sections:
     hero:
       name: hero
-      headline: Grab your slice of the Decentralized Financial (DeFi) market.
+      headline: Schnapp dir dein Stück vom Dezentralen Finanz (DeFi) Markt-Kuchen.
       featured_product:
         logo: /svg/logos/logo-pool.svg
         headline: Pool
-        description: Earn passive income from cryptocurrencies.
+        description: Erhalte Cashflow aus Kryptowährungen.
         cta:
-          label: Earn with Pool
+          label: Verdiene mit Pool
           url: https://pool.cakedefi.com/
       what_is_defi:
-        headline: What is DeFi?
+        headline: Was ist DeFi?
         cta:
-          label: Watch Video
-          url: https://www.youtube.com/watch?v=2UehwDPc3Tk
+          label: Schau dir dieses Video an:
+          url: https://www.youtube.com/watch?v=EqSY2ryEoZU
       community:
-        headline: Join our Telegram Community
+        headline: Sei in unserer Telegram Community dabei
         cta:
-          label: Join Now
-          url: https://t.me/CakeDeFi_EN
+          label: Beitreten
+          url: https://t.me/CakeDeFi_DE
     about:
       name: about
-      headline: DeFi accessible to anyone.
+      headline: DeFi für jeden.
       description:
-        <p data-scroll="once">Cake is a platform that empowers you to be in control of your finances by creating cashflow from Decentralized Finance.</p>
-        <p data-scroll="once">Explore our range of products to see how you can regain your financial freedom.</p>
+        <p data-scroll="once">Cake ist eine Plattform welche es jedermann/-frau ermöglicht in Kontrolle über die eigenen Finanzen zu bleiben und Cashflow aus dem Dezentralen Finanzsystem zu erhalten.</p>
+        <p data-scroll="once">Schau dir unsere unterschiedlichen Produkte an um dir dein Stück am Dezentralen Finanzmarkt-Kuchen zu sichern.</p>
       tweets:
-        headline: What are others saying?
+        headline: Was sagen andere über uns?
     pool:
       name: pool
       headline: Pool
-      description: Introducing Pool, a platform that lets you earn real-time passive income from cryptocurrencies, by staking in masternode pools.
+      description: Pool ist eine Plattform bei der du in Echtzeit durch Masternode Staking Cashflow aus Kryptowährungen erhältst.
       cta:
-        label: Earn with Pool
+        label: Erhalte Cashflow mit Pool
         url: https://pool.cakedefi.com/
       image:
         x1: /img/products/pool/pool-ipad.png
@@ -54,10 +54,10 @@ content:
     roadmap:
       name: roadmap
       headline: Roadmap
-      description: Subscribe to be notified of announcements and product releases.
+      description: Trage dich ein und bleib up to Date wenn es Neuigkeiten gibt. Es lohnt sich!
       subscribe:
         textfield:
-          placeholder: Email address
+          placeholder: E-Mail-Addresse
         button:
           label: Subscribe
       timeline:
@@ -65,28 +65,28 @@ content:
           events:
             - month: Apr
               status: past
-              title: Working on first Pool concept.
+              title: Die Founder arbeiten an der ersten Version.
               image:
                 x1: /img/timeline/2019/apr/founders.jpg
                 x2: /img/timeline/2019/apr/founders@2x.jpg
                 alt: Founders photo
             - month: Jun
               status: past
-              title: Company launch with 1.4m USD seed round.
+              title: Die Firma erhält 1.4m USD Seed Funding.
               image:
                 x1: /img/timeline/2019/jun/cake.png
                 x2: /img/timeline/2019/jun/cake@2x.png
                 alt: Cake logo
             - month: Aug
               status: past
-              title: Public launch of Pool by Cake.
+              title: Public launch von Pool by Cake.
               image:
                 x1: /img/timeline/2019/aug/pool.png
                 x2: /img/timeline/2019/aug/pool@2x.png
                 alt: Pool logo
             - month: Sep
               status: future
-              title: Conceptualization of DeFi blockchain.
+              title: Konzeptionalisierung der DeFi Blockchain.
               image:
                 x1: /img/timeline/2019/sep/concept.jpg
                 x2: /img/timeline/2019/sep/concept@2x.jpg
@@ -101,17 +101,17 @@ content:
     team:
       name: team
       headline: Team
-      description: Cake is founded in the beginning of 2019 by Dr. Julian Hosp and U-Zyn Chua to solve major financial pain points in people’s lives. We are innovators from diverse backgrounds and industries.
+      description: Cake wurde Anfang 2019 von Dr. Julian Hosp und U-Zyn Chua gegründet, um wichtige finanzielle Probleme im Leben der Menschen zu lösen. Das Team besteht aus Innovatoren mit unterschiedlichem Know-how aus verschiedenen Bereichen und Branchen.
       founders:
         - name: Julian Hosp
           title: CEO & Co-founder
           image: julian-hosp
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          description: Serial Entrepreneur, International Blockchain expert, Ex-medical doctor, Ex-professional athlete.
           linkedin: https://www.linkedin.com/in/julianhosp
         - name: U-Zyn Chua
           title: CTO & Co-founder
           image: u-zyn-chua
-          description: As one of the early contributors to Bitcoin, Ethereum, and Dash projects, U-Zyn is a pioneer in the emergence of blockchain technology.
+          description: Als einer der ersten Beitragenden bei Bitcoin-, Ethereum- und Dash-Projekten ist U-Zyn ein Pionier in der Entwicklung der Blockchain-Technologie.
           linkedin: https://www.linkedin.com/in/uzynchua/
       members:
         - name: Bettina Hosp
@@ -156,49 +156,9 @@ content:
           linkedin: https://www.linkedin.com/in/ewald-serafini/
       investors:
         headline: Investors & Advisors
-        investors:
-          - name: John Rost
-            title: Angel Investor
-            image: john-rost
-          # - name: Kenneth Oh
-          #   title: Legal Advisor
-          #   image: kenneth-oh
-      map:
-        locations:
-          - label: Singapore, Singapore
-            xpos: 81
-            ypos: 57.4
-            anchor: se
-            members: julian-hosp, u-zyn-chua, bettina-hosp, ben-zumbrunn, aen, dionne-ong
-          - label: Munich, Germany
-            xpos: 49.4
-            ypos: 22.3
-            members: patricia-zinnecker
-            anchor: nw
-          - label: Krasnodar, Russia
-            xpos: 57.7
-            ypos: 24.8
-            anchor: s
-            members: pavel-pekanov
-          - label: Penang, Malaysia
-            xpos: 79.7
-            ypos: 54.3
-            anchor: ne
-            members: genevie-loo
-          - label: Indore, India
-            xpos: 70.8
-            ypos: 41.3
-            anchor: sw
-            members: tanuj-soni
-          - label: Bolzano, Italy
-            xpos: 49.2
-            ypos: 23.3
-            anchor: sw
-            members: ewald-serafini
     jobs:
       name: jobs
-      headline: We are hiring. Join us on an exciting journey building DeFi products!
+      headline: Wir suchen dich! Bewirb dich und sei in einem der raschest wachsenden Blockchain Firmen dabei!
       cta:
-        label: Explore Opportunities
-        url: https://www.linkedin.com/company/cakedefi/jobs/
+        label: Bei Cake bewerben
 ---

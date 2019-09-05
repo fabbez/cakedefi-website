@@ -23,9 +23,12 @@
   <main>
 
     <section class="content">
-      <div class="container">
-        {{ .Content }}
-        hhhhh
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-xl-10 offset-xl-1">
+            {{ .Content }}
+          </div>
+        </div>
       </div>
     </section>
 
@@ -33,6 +36,11 @@
 
   {{ partial "footer.html" . }}
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  {{ $scrolltrigger := resources.Get "js/ScrollTrigger.min.js" }}
+  {{ $main := resources.Get "js/main.js" }}
+  {{ $js := slice $scrolltrigger $main | resources.Concat "js/bundle.js" | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
   {{ template "_internal/google_analytics_async.html" . }}
 </body>
 

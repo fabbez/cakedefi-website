@@ -108,9 +108,10 @@ body > header {
     width: 160px;
     height: 32px;
 
-    img {
+    svg {
       width: 160px;
       height: 32px;
+      fill: currentColor;
     }
   }
 
@@ -165,8 +166,6 @@ body > header {
       }
 
       @include media(">md") {
-        color: $color-ui-white;
-        
         &:hover {
           background-color: transparent;
           text-decoration: underline;
@@ -189,22 +188,50 @@ body > header {
     height: 32px;
     border-radius: $base-border-radius;
     cursor: pointer;
-    background-image: url(/svg/icons/hbg.svg);
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-ui-action;
 
     @include media(">md") {
       display: none;
     }
 
+    svg {
+      fill: currentColor;
+    }
+
     &:hover {
       background-color: $color-brand-primary;
+      color: $color-ui-white;
     }
 
     &.active {
       background-color: $color-brand-primary;
       background-image: url(/svg/icons/hbg-close.svg);
+      
+      svg {
+        display: none;
+      }
     }
+  }
+}
+
+.home {
+  .brand {
+    color: $color-ui-white;
+  }
+  .menu {
+    a {
+      @include media(">md") {
+        color: $color-ui-white;
+      }
+    }
+  }
+  .hbg {
+    color: $color-ui-white;
   }
 }
 
@@ -213,137 +240,8 @@ body > header {
 // Content for single page
 //
 
-.content {
-  position: relative;
-  padding-bottom: $section-padding-bottom * 2;
-
-  @include media(">lg") {
-    padding-left: $grid-gutter * 2;
-    padding-right: $grid-gutter * 2;
-    padding-bottom: $section-padding-bottom-lg * 2;
-  }
-
-  > header {
-    position: relative;
-    width: 100%;
-    z-index: $zindex-sticky;
-    top: $section-padding-top;
-
-    @include media(">lg") {
-      top: $section-padding-top-lg;
-    }
-
-    .row {
-      align-items: center;
-    }
-
-    .brand {
-      display: block;
-      width: 100px;
-      height: 28px;
-      margin-left: $grid-gutter / 2;
-
-      img {
-        width: 100px;
-        height: 28px;
-      }
-    }
-  }
-
-  > main {
-    position: relative;
-    top: $section-padding-top * 2;
-
-    @include media(">lg") {
-      top: $section-padding-top-lg * 2;
-    }
-  }
-
-  > footer {
-    position: relative;
-    top: 188px;
-
-    .col {
-      margin-left: 0;
-    }
-  }
-}
-
-
-//
-// Pagination
-// 
-
-body > .pagination {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 2px;
-  list-style: none;
-  z-index: $zindex-fixed;
-
-  @include media("<lg") {
-    display: none;
-  }
-
-  a {
-    display: block;
-    width: 24px;
-    height: 24px;
-    color: $color-ui-default;
-    position: relative;
-    padding: 8px;
-
-    &:after {
-      width: 4px;
-      height: 4px;
-      display: block;
-      background-color: $color-ui-dark;
-      border-radius: 50%;
-      content: '';
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      transition: all 0.3s ease;
-    }
-
-    &.active {
-      &:after {
-        width: 16px;
-        height: 16px;
-        top: 4px;
-        right: 4px;
-        background-color: $color-ui-default;
-      }
-    }
-
-    &:not(.active):hover {
-      &:after {
-        width: 8px;
-        height: 8px;
-        top: 8px;
-        right: 8px;
-        background-color: $color-ui-default;
-      }
-
-      .hover-text {
-        opacity: 1;
-      }
-    }
-
-    .hover-text {
-      display: block;
-      position: absolute;
-      left: 32px;
-      top: 4px;
-      width: 192px;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      font-size: $caption-font-size;
-      line-height: 16px;
-      word-wrap: nowrap;
-    }
-  }
+section.content {
+  margin-top: 96px;
 }
 
 
