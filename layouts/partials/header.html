@@ -24,7 +24,7 @@
             <div class="lang-menu" id="lang-switcher">
               <ul>
                 {{ range $.Site.Home.AllTranslations }}
-                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                <li><a href="{{ .Permalink | relURL }}">{{ .Language.LanguageName }}</a></li>
                 {{ end }}
               </ul>
             </div>
