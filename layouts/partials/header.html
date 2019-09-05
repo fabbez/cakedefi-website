@@ -16,9 +16,9 @@
 
       <div class="menu col col-lg-10 col-xl-8" data-scroll="once">
         <ul>
-          <li><a href="/#pool">Pool</a></li>
-          <li><a href="/#roadmap">Roadmap</a></li>
-          <li><a href="/#team">Team</a></li>
+          <li><a href="{{ relref . "/#about" }}">About</a></li>
+          <li><a href="{{ relref . "/#roadmap" }}">Roadmap</a></li>
+          <li><a href="{{ relref . "/#team" }}">Team</a></li>
           <li class="lang-switcher">
             <a href="#lang-menu">{{ .Language }}</a>
             <div class="lang-menu" id="lang-switcher">

@@ -12,10 +12,10 @@
       <div class="col col-sm-6 col-lg-2 offset-xl-1">
         <h4>We&rsquo;re Cake</h4>
         <ul>
-          <li><a href="{{ relref . "/#about" }}">{{ $.Param "content.sections.about.name" | humanize }}</a></li>
-          <li><a href="/#{{ $.Param "content.sections.roadmap.name" }}">{{ $.Param "content.sections.roadmap.name"| humanize }}</a></li>
-          <li><a href="/#{{ $.Param "content.sections.team.name" }}">{{ $.Param "content.sections.team.name"| humanize }}</a></li>
-          <li><a href="/#{{ $.Param "content.sections.jobs.name" }}">{{ $.Param "content.sections.jobs.name"| humanize }}</a></li>
+          <li><a href="{{ relref . "/#about" }}">About</a></li>
+          <li><a href="{{ relref . "/#roadmap" }}">Roadmap</a></li>
+          <li><a href="{{ relref . "/#team" }}">Team</a></li>
+          <li><a href="{{ relref . "/#jobs" }}">Jobs</a></li>
         </ul>
       </div>
       <div class="col col-sm-6 col-lg-2">
