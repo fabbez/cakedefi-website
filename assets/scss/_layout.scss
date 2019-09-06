@@ -99,17 +99,6 @@ body > header {
     top: $section-padding-top;
   }
 
-  &.sticky {
-    position: fixed;
-    background-color: $color-ui-white;
-    top: 0;
-
-    @include media(">lg") {
-      padding-top: $grid-gutter / 2;
-      padding-bottom: $grid-gutter / 2;
-    }
-  }
-
   .row {
     align-items: center;
   }
@@ -124,6 +113,26 @@ body > header {
       width: 160px;
       height: 32px;
       fill: currentColor;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    background-color: $color-ui-white;
+    top: 0;
+    padding-top: $grid-gutter / 2;
+    padding-bottom: $grid-gutter / 2;
+
+    .brand svg {
+      @include media("<sm") {
+        transform: scale(0.8);
+        transform-origin: left;
+      }
+    }
+
+    .hbg {
+      top: $grid-gutter / 2;
     }
   }
 
