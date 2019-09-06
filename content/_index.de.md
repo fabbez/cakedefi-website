@@ -9,7 +9,7 @@ meta:
     site_name: Cake
     image: https://cakedefi.com/assets/img/social/abstract.jpg
     image_type: image/jpg
-    locale: en_US
+    locale: de_DE
 content:
   sections:
     hero:
