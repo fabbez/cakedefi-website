@@ -743,6 +743,7 @@ section.jobs {
 
 .pm-asset-row,
 .pm-color-row {
+  flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
   margin-left: -$grid-gutter / 2;
@@ -751,11 +752,14 @@ section.jobs {
 
 .pm-asset,
 .pm-color {
+  min-width: 300px;
+  flex-grow: 1;
   border: 1px solid $color-ui-light;
   border-radius: $base-border-radius;
   width: calc(50% - #{$grid-gutter});
   margin-left: $grid-gutter / 2;
   margin-right: $grid-gutter / 2;
+  margin-bottom: $grid-gutter / 2;
   overflow: hidden;
 
   .image-wrapper,
