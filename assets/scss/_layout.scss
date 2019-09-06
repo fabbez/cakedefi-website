@@ -335,8 +335,8 @@ section.hero {
 
   @include media(">lg") {
     background-position: 0 4px;
-    padding-top: $section-padding-top-lg * 1.5;
-    padding-bottom: $section-padding-bottom-lg;
+    padding-top: $section-padding-top-lg * 2;
+    padding-bottom: $section-padding-bottom-lg * 1.5;
   }
 
   @include media(">xl") {
@@ -607,7 +607,7 @@ section.team {
   }
 
   .founder {
-    margin-bottom: 48px;
+    margin-bottom: $grid-gutter * 2;
 
     .row {
       align-items: flex-start;
@@ -646,7 +646,7 @@ section.team {
   }
 
   .member {
-    margin-bottom: 32px;
+    margin-bottom: $grid-gutter * 2;
 
     .member-linkedin {
       left: 72px;
@@ -658,7 +658,7 @@ section.team {
       border-radius: 50%;
       width: 80px;
       height: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
   }
 
