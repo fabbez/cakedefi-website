@@ -368,20 +368,30 @@ section.hero {
   }
 
   .action-call-row {
-    display: flex;
+    @include media(">lg") {
+      display: flex;
+    }
   }
 
   .action-call {
-    width: 50%;
-    height: 224px;
+    height: 160px;
     padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 
+    @include media(">lg") {
+      width: 50%;
+      height: 224px;
+    }
+
     &:first-child {
-      border-right: $base-border-style;
+      border-bottom: $base-border-style;
+
+      @include media(">lg") {
+        border-right: $base-border-style;
+      }
     }
   }
 }
