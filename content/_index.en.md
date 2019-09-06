@@ -109,7 +109,7 @@ content:
         - name: Julian Hosp
           title: CEO & Co-founder
           image: julian-hosp
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          description: Serial Entrepreneur, International Blockchain expert, Ex-medical doctor, Ex-professional athlete.
           linkedin: https://www.linkedin.com/in/julianhosp
         - name: U-Zyn Chua
           title: CTO & Co-founder
